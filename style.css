@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap');
+
+:root {
+    --user-page-height: 100vh; 
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #090d11;
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+a {
+    text-decoration: none;    
+}
+
+.windows-bg{
+    background-color: #181e25;
+    border-radius: 20px;
+}
+
+.windows-header{
+    background-color: #131920;
+    height: 67px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay{
+    display: none;
+}
+
+.Overlay-Navigation{
+    display: none;
+}
+
+.circle-box{
+    width: 200px;
+}
+
+.empty-box{
+    width: 200px;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 29px;
+    width: 29px;
+    display: inline-block;
+    margin-top: 20px;
+    
+}
+
+.red-circle{
+    background-color: #ed6a5e;
+    margin-left: 35px;
+}
+
+.yellow-circle{
+    background-color: #f4bf4f;
+    margin-left: 16px;
+}
+
+.green-circle{
+    background-color: #61c554;
+    margin-left: 16px;
+}
+
+.windows-title{
+    margin-top: auto;
+    padding: 20px;
+}
+
+.windows-title a{
+    font-size: 20px;
+    color: rgba(163, 165, 168, 0.7);
+    stroke: black;
+    stroke-width: 1px;
+    text-decoration: none;
+    font-family: Fira Code;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+}
+  
+.Contacts{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 6%;
+    margin-bottom: 5%;
+}
+
+.Contacts a {
+    fill: #fff;
+    background-color: #131920;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    transition: 500ms;
+    border-radius: 50px;
+}
+
+.Contacts svg {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    min-height: 20px;
+    min-width: 20px;;
+}
+
+.Contacts a:hover {
+    fill: #F4BF4F;
+    background-color: #69727d;
+    cursor: pointer;
+}
+
+.name-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: calc((var(--user-page-height) * 0.45) - 155px);
+    padding-bottom: calc((var(--user-page-height) * 0.45) - 78px);
+}
+.tilda{
+    color: #4eacf9;
+    font-size: 72px;
+    margin: 0 5px;
+}
+.greater-than{
+    color: #80d440;
+    font-size: 72px;
+    margin: 0 5px;
+}
+.name{
+    color: white;
+    font-size: 60px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .windows-bg{
+        margin: 10px;
+        background-color: #181e25;
+        border-radius: 20px;
+
+    }
+    .windows-header{
+        height: 40px;
+    }
+
+    .overlay{
+        display: block;
+    }
+
+    .Overlay-Navigation{
+        display:block;
+    }
+    
+    .overlay a {
+        font-size: 20px
+    }
+
+    .mobile-circle-box{
+        width: 120px;
+    }
+
+    .circle{
+        height: 17.4px;
+        width: 17.4px;
+        margin-top: 12px;
+    }
+    .red-circle{
+        margin-left: 21px;
+    }
+    .yellow-circle{
+        margin-left: 9.6px;
+    }
+    .green-circle{
+        margin-left: 9.6px;
+    }
+    .windows-title{
+        display: none;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(9, 14, 18);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+      
+      .overlay a {
+        margin: 10px;
+        font-family: AbeeZee;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 60px;
+    }
+
+      .mobile-navigation-list{
+        margin: 10px;
+        margin-top: 100px;
+    }
+
+      .li-active{
+        color: #ffffff;
+    } 
+
+    .windows-bg{
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .greater-than{
+        font-size: 40px;
+    }
+    .tilda{
+        font-size: 40px;
+    }
+    .name {
+        font-size: 32px;
+    }
+
+    .name-box {
+
+        padding-top: calc((var(--user-page-height) * 0.45) - 83px);
+        padding-bottom: calc(var(--user-page-height) * 0.45);
+    }
+
+    .Contacts {
+
+        margin-right: 5%;
+        margin-bottom: 10%;
+ }
+}
